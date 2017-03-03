@@ -13,6 +13,7 @@
 		ED2196801E69205300FBFBB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21967F1E69205300FBFBB5 /* Assets.xcassets */; };
 		ED2196831E69205300FBFBB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2196811E69205300FBFBB5 /* LaunchScreen.storyboard */; };
 		ED21968E1E69205300FBFBB5 /* AccelerometerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21968D1E69205300FBFBB5 /* AccelerometerDemoTests.swift */; };
+		ED21969A1E6921A300FBFBB5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2196991E6921A300FBFBB5 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		ED2196891E69205300FBFBB5 /* AccelerometerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED21968D1E69205300FBFBB5 /* AccelerometerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDemoTests.swift; sourceTree = "<group>"; };
 		ED21968F1E69205300FBFBB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2196991E6921A300FBFBB5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED21969A1E6921A300FBFBB5 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				ED2196771E69205300FBFBB5 /* AccelerometerDemo */,
 				ED21968C1E69205300FBFBB5 /* AccelerometerDemoTests */,
 				ED2196761E69205300FBFBB5 /* Products */,
+				ED2196981E6921A300FBFBB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,14 @@
 				ED21968F1E69205300FBFBB5 /* Info.plist */,
 			);
 			path = AccelerometerDemoTests;
+			sourceTree = "<group>";
+		};
+		ED2196981E6921A300FBFBB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2196991E6921A300FBFBB5 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3EDT3669ZJ;
 				INFOPLIST_FILE = AccelerometerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.AccelerometerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3EDT3669ZJ;
 				INFOPLIST_FILE = AccelerometerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.AccelerometerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
